@@ -1,3 +1,7 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
 body {
   background-color: #333;
   font-family: sans-serif;
@@ -7,15 +11,43 @@ body {
 .container {
   margin: 0 auto;
   width: 420px;
+  background-color: black;
+  padding-top: .5%; /*This adjusted the container at the top to center the arrow better*/
 }
 
 nav {
   margin: 0 auto;
   padding: 10px 0 15px 15px;
-  position: fixed;
   width: 420px;
 }
 
-.restaurant-list {
-  padding-top: 50px;
+/*Removed .resturant-list padding*/
+
+.location {
+  background-color: silver; /* This changed the background color to silver*/
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid gray; /*This added the border between each element*/
+}
+
+.location:hover {
+  background-color: grey; /* Changes the color to grey when hovering over elements*/
+}
+
+.content h1 {
+font-weight: bold;
+line-height: 15px;
+font-size: 15px;
+}
+
+.content h3 {
+  padding-top: 1.4%; /* Modified the spacing between h1 and h3*/
+}
+
+.arrow {
+  float: right;
+  position: relative; /*Fixed the positon of the right arrow for each element*/
+  left: -10px;
+  top: -23px
 }
